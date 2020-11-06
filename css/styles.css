@@ -1,0 +1,180 @@
+/***** html tags *****/
+*{
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  padding-right: 20px;
+}
+
+button{
+  background-color: hsl(0, 0%, 0%);
+  border: none;
+  padding: 20px 40px;
+}
+
+p{
+  font-size: 12px;
+  color: hsl(0, 0%, 63%);
+  line-height: 1.5;
+}
+
+h1{
+  padding: 100px 0 30px 100px;
+}
+
+h6{
+  display: inline-block;
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-bottom: 90px;
+  letter-spacing: 5px;
+}
+h5{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+/***** ids *****/
+#second-img{
+  display: none;
+}
+
+#third-img{
+  display: none;
+}
+#ham-icon{
+  display: none;
+}
+#close-icon{
+  display: none;
+  padding-right: 5px;
+}
+
+/***** classes *****/
+.main-img-wrapper{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  height: 500px;
+}
+
+.navbar{
+  background: url("../images/desktop-image-hero-1.jpg") no-repeat;
+}
+
+.nav-items{
+  display: inline;
+}
+.logo{
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.img-descr{
+  width: 500px;
+}
+
+.img-descr p{
+padding-left: 100px;
+padding-bottom: 30px;
+}
+
+.btn-next{
+  margin-left: -10px;
+}
+
+.showcase{
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1fr;
+}
+.showcase p{
+  padding-right: 30px;
+}
+
+/*****  queries *****/
+@media only screen and (max-width: 600px) {
+  .main-img-wrapper, .showcase{
+    grid-template-columns: auto;
+  }
+  .main-img-wrapper{
+    height: auto;
+    width: auto;
+  }
+  .navbar{
+    height: 360px;
+    text-align: center;
+    background: url("../images/mobile-image-hero-1.jpg") no-repeat;
+  }
+  .nav-items{
+    display: none;
+  }
+  h1{
+    padding: 10% 4%;
+  }
+  h5{
+    padding-left: 4%;
+  }
+  a{
+    color: black;
+  }
+  .img-descr{
+    width: auto;
+  }
+  #ham-icon{
+    display: inline;
+  }
+
+  .links-show{
+    display: block;
+    position: absolute;
+    padding: 20px 45px;
+    z-index: 10;
+    background-color: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0px 100px 10px 150px rgba(0,0,0,0.2);
+  }
+
+  .img-descr p{
+  padding-left: 4%;
+  }
+  .btn-prev{
+    position: absolute;
+    top: 292px;
+    right:90px;
+  }
+  .btn-next{
+    position: absolute;
+    top: 292px;
+    right:0;
+  }
+  .showcase{
+    height: auto;
+    width: auto;
+  }
+  .showcase p{
+    padding-left: 4%;
+    padding-bottom: 4%;
+  }
+}
+
+/***** pseudo-classes *****/
+a:hover{
+  padding-bottom: 10px;
+  border-bottom: solid 2px;
+}
+
+button:hover{
+  background-color: hsl(0, 0%, 27%);
+  cursor: pointer;
+}
+
+.shop-now:hover{
+  filter: invert(71%) sepia(6%) saturate(13%) hue-rotate(95deg) brightness(89%) contrast(93%);
+  cursor: pointer;
+}
